@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const PORT = 3003;
+const PORT = process.env.PORT || 3003;
 const morgan = require("morgan");
 const cors = require("cors");
 app.use(express.static("build"));
