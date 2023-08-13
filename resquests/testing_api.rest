@@ -1,0 +1,33 @@
+GET  http://localhost:3001/api/persons 
+###
+
+GET  http://localhost:3001/api/persons/3
+###
+
+GET http://localhost:3001/api/persons/7
+
+###
+
+DELETE http://localhost:3001/api/persons/2
+
+###
+
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "Arto Hellas",
+    "number": "040-123456"
+}
+
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "number": "39-4423523"
+}
+
+### It is working
